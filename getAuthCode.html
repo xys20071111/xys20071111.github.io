@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>授权码</title>
+  </head>
+  <body>
+    <a>你的授权码:</a>
+    <input type="text" id="code" value="">
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('code');
+      let codeInput = document.getElementById('code')
+      codeInput.value = code
+    </script>
+  </body>
+<html>
